@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  max-width: 1440px;
+}
+
+.container {
+  margin: 4rem auto;
+  padding: 0 4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.center-container {
+  text-align: center;
+}
+
+.center-container > div {
+  width: 45%;
+  margin: auto;
+}
+
+.items-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.items-container > * {
+  flex: 0.3;
+  margin-right: 0.8rem;
+}
+
+.py-1 {
+  padding: 4rem 0;
+}
+
+.mg-y {
+  margin: 6rem auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+p {
+  color: #9fabb2;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn-ios, .btn-mac {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 0.6rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  transition: opcity 0.5s;
+}
+
+.btn-ios:hover, .btn-mac:hover {
+  opacity: 0.8;
+}
+
+.btn-ios {
+  background-color: #26baa4;
+  box-shadow: 0 5px 5px rgba(112, 202, 214, 0.4);
+}
+
+.btn-mac {
+  background-color: #6173ff;
+  box-shadow: 0 5px 5px rgba(143, 109, 197, 0.4);
+}
+
+nav {
+  background: url(../images/bg-header-desktop.png) no-repeat center center/cover;
+  padding: 5rem 0 3rem;
+}
+
+nav div img {
+  width: 100px;
+}
+
+#feature .feature-container {
+  display: flex;
+}
+
+#feature .feature-container .feature-desc {
+  align-self: center;
+  margin: 0 5rem;
+  flex: 0.3;
+}
+
+#feature .feature-container .feature-desc p {
+  margin-bottom: 2.5rem;
+}
+
+#feature .computer-img {
+  flex: 0.6;
+  margin-left: -30px;
+}
+
+footer {
+  background-color: #e3e3e3;
+  padding: 2rem;
+  font-size: 15px;
+  text-align: center;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .footer-logo {
+  width: 60px;
+}
+
+footer div ul li {
+  padding: 0.4rem 0;
+  transition: color 0.3s;
+}
+
+footer div ul li:hover {
+  color: #26baa4;
+  cursor: pointer;
+}
+
+footer .social-link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-link a {
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+footer .social-link a:hover {
+  color: #26baa4;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 4rem auto;
+    padding: 0;
+  }
+  nav {
+    background: url(../images/bg-header-mobile.png) no-repeat center center/cover;
+  }
+  .btn-ios,
+  .btn-mac {
+    width: 90%;
+  }
+  .center-container > div {
+    width: 90%;
+  }
+  .items-container,
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .items-container > div,
+  .feature-container > div {
+    width: 90%;
+  }
+  .items-container > div {
+    flex: 1;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+  #feature > div {
+    flex: 1;
+  }
+  #feature .computer-img {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  footer .footer-container {
+    flex-direction: column;
+  }
+  footer .footer-container > div {
+    margin-bottom: 1rem;
+  }
+  footer .footer-container .social-link {
+    margin-bottom: 0;
+  }
+}
